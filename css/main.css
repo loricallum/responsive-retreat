@@ -114,18 +114,15 @@
     nav,
     main {
       color: black;
+
     }
 
-img {
-  width: inherit;
-  display: flex;
-}
 
      ul,
      ol {
       list-style-type: none;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1em;
+      
+     
      }
 
      a {
@@ -150,24 +147,38 @@ img {
      }
 
      p{
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1em;
+      font-size: .875em;
+      line-height: 1.285;
 
      }
+
+
+     img { 
+      width: 100%;
+    }
+     
+    figure {
+            margin: 0;
+    }
+
 
      p {
       font-size: .875em;
       line-height: 1.285;
+     
     }
       
+    .features h2, p {
+      color: ivory;
+    }
+
     address {
      font-style: normal;
     }
 
      address {
 
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1em;
+      font-style: normal;
      }
 
 
@@ -187,6 +198,14 @@ img {
     align-items: center;
     flex-flow: row wrap;
   }
+
+  header figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
   
   header {
     padding: 15px 0;
@@ -267,9 +286,14 @@ img {
   /* Hero Area */
   
   .hero-area {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+    
   }
   
   .hero-area h1 {
@@ -293,6 +317,13 @@ img {
   /* ==========================================================================
      Styling
      ========================================================================== */
+     aside {
+      background-color: #527158;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
 
      aside .form {
       margin-top: 30px;
@@ -322,9 +353,12 @@ img {
   /* Features */
   
   .features {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+     background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
   }
   
   .features h2 {
@@ -345,6 +379,7 @@ img {
   
   .features p {
     margin: 0;
+    text-align: center;
   }
   
   /* Reviews */
@@ -389,6 +424,22 @@ img {
   .contact-content p {
     margin: 0;
   }
+
+  .map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 80%; 
+    overflow: hidden;
+    position: relative;
+}
+ 
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
   
   /* ==========================================================================
      FAQ Page
@@ -416,12 +467,13 @@ img {
   }
   
   .faq-content h4{
-   
-    line-height: 1.333;
+       line-height: 1.333;
   }
   
 
-
+  .faq-content {
+    margin-bottom: 50px;
+  }
   
   /* ==========================================================================
      Helper classes
