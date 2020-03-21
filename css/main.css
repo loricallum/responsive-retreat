@@ -152,6 +152,10 @@
 
      }
 
+     .features i {
+      font-size: 3.75em;
+            margin-bottom: 40px;
+    }
 
      img { 
       width: 100%;
